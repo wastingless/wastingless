@@ -10,9 +10,9 @@ title: Waste Less
 email: wasteless8@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
   We are fighting local food waste by picking up food that would otherwise be thrown out.
-baseurl: "http://wastingless.github.io/"# the subpath of your site, e.g. /blog
+baseurl: ""# the subpath of your site, e.g. /blog
 site.github.url: ""
-url: "http://wastingless.github.io/" # the base hostname & protocol for your site
+url: "http://wastingless.github.io" # the base hostname & protocol for your site
 twitter_username: _wasteless_
 
 # Build settings
