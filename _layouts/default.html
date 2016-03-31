@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {% if page.title %}
+    <div class="title-bar">
+        <div class="wrapper">
+            <h1>{{ page.description }}</h1>
+        </div>
+    </div>
+    {% endif %}
+
+    <div class="page-content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

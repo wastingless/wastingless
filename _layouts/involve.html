@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    {% include header.html %}
+
+    {% if page.description %}
+    <div class="title-bar">
+      <div class="wrapper">
+          <h1>{{ page.description }}</h1>
+      </div>
+    </div>
+    {% endif %}
+    <div class="involved-page">
+      <div>
+          <h1>Routes</h1>
+          <h1 class="right">Schedule</h1>
+      </div>
+    </div>
+    <div class="page-content">
+      <div class="page-content.wrapper">
+        <article class="post-content">   
+          <div class="route-content">
+            <div id="map"></div> 
+            <script>
+            mapboxgl.accessToken = "pk.eyJ1Ijoicndlc3R5IiwiYSI6ImNpbHYweHJqbDAxZ2h1MGtzOWdjeHBqcjQifQ.iFX4FLyfV_BlJ8A5tXjlSA";
+            var map = new mapboxgl.Map({
+               container: 'map',
+               style: 'mapbox://styles/mapbox/streets-v8',
+               center: [-87.75, 42.13],
+               zoom: 10
+            }); 
+
+            map.on('style.load', function() {
+                map.addSource("markers", {
+                "type": "geojson",
+                "data": {
+                    "type": "FeatureCollection",
+                    "features": [{
+                        "type": "Feature",
+                        "geometry": {
+                            "type": "Point",
+                            "coordinates": [42.118198, -87.743235]
+                        },
+                        "properties": {
+                            "title": "Once Upon a Bagel",
+                            "marker-symbol": "monument"
+                        } 
+                    }]
+                }
+            });
+        
+                map.addLayer({
+                    "id": "markers",
+                    "type": "symbol",
+                    "source": "markers",
+                    "layout": {
+                        "icon-image": "{marker-symbol}-15",
+                        "text-field": "{title}",
+                        "text-font": ["Open Sans Semibold", "Arial Unicode MS Bold"],
+                        "text-offset": [0, 0.6],
+                        "text-anchor": "top"
+                    }
+                });
+            });
+
+                
+            </script>
+                
+            <iframe src="https://docs.google.com/forms/d/1cWxkkQn7clMHwLwSLt_bQJfsttdxsGRZZ7abquoHxfM/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> 
+            
+            <table>
+              <tr>
+                <th>Business</th>
+                <th>Address</th>
+                <th>Pickup days</th>
+              <tr>
+                <td>Once Upon a Bagel</td>
+                <td>1050 Gage St, Winnetka, IL 60093</td>
+                <td>Wednesday</td>
+              </tr>
+            </table>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>
+~       

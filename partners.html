@@ -1,0 +1,13 @@
+---
+layout:	page
+title: Partners
+description: Our friends in fighting food waste.
+---
+
+{% for partner in site.partners %}
+    <div class="partner-box">
+        <h3>{{ partner.title }}</h3>
+	    <img src="{{ partner.image_path }}" alt="{{ partner.title }}"/>
+	    <p>{{ partner.content }}</p>
+    </div>
+{% endfor %}
