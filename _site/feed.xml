@@ -4,10 +4,10 @@
     <title>Waste Less</title>
     <description>We are fighting local food waste by picking up food that would otherwise be thrown out.
 </description>
-    <link>http://wastingless.com//</link>
-    <atom:link href="http://wastingless.com//feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 30 Mar 2016 23:43:49 -0500</pubDate>
-    <lastBuildDate>Wed, 30 Mar 2016 23:43:49 -0500</lastBuildDate>
+    <link>http://wastingless.github.io//</link>
+    <atom:link href="http://wastingless.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Thu, 31 Mar 2016 13:47:15 -0500</pubDate>
+    <lastBuildDate>Thu, 31 Mar 2016 13:47:15 -0500</lastBuildDate>
     <generator>Jekyll v3.1.1</generator>
     
       <item>
@@ -28,8 +28,8 @@
 
 </description>
         <pubDate>Mon, 22 Feb 2016 14:49:12 -0600</pubDate>
-        <link>http://wastingless.com//jekyll/update/2016/02/22/welcome-to-jekyll.html</link>
-        <guid isPermaLink="true">http://wastingless.com//jekyll/update/2016/02/22/welcome-to-jekyll.html</guid>
+        <link>http://wastingless.github.io//jekyll/update/2016/02/22/welcome-to-jekyll.html</link>
+        <guid isPermaLink="true">http://wastingless.github.io//jekyll/update/2016/02/22/welcome-to-jekyll.html</guid>
         
         
         <category>jekyll</category>
