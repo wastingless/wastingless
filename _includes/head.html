@@ -1,5 +1,4 @@
 <head>
-  {% include base.html %}
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +8,7 @@
   <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.js'></script>
 
   <link rel='stylesheet' ref='https://api.tiles.mapbox.com/mapbox-gl-js/v0.15.0/mapbox-gl.css'/>
-  <link rel="stylesheet" href="{{ base }}/css/main.css">
+  <link rel="stylesheet" href="{{ site.baseurl }}/css/main.css">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
 </head>
