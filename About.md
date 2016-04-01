@@ -8,7 +8,7 @@ permalink: /about/
 <div class="about-page">
   <div class="picture-text">
     <div id="img-float-left">
-        <img src="/food-waste-website/pictures/bagels_1.jpg">
+        <img src="{{ site.baseurl }}/pictures/bagels_1.jpg">
     </div>
     <div id="text-left">
         <p>Our names are Maya Krishnan, Ida Justesen, David Snower, and Maddie Murray.  We are Seniors at New Trier High School and working on a project to reduce food waste in our local community.</p>
@@ -17,7 +17,7 @@ permalink: /about/
   </div>
   <div class="picture-text">
     <div id="img-float-right">
-        <img src="/food-waste-website/pictures/bagels_2.jpg">
+        <img src="{{ site.baseurl }}/pictures/bagels_2.jpg">
     </div>
     <div id="text-right">
         <p>We have Once Upon a Bagel in Winnetka and Highland Park donating their left over bagels.  They donate about a total of 250-300 bagels a day.  We pick up the bagels the day before, bag them for freshness, and then donate them the following day.</p>
@@ -36,7 +36,7 @@ permalink: /about/
 
   <div class="picture-text">
     <div id="img-float-left">
-        <img src="/food-waste-website/pictures/bagels_3.jpg">
+        <img src="{{ site.baseurl }}/pictures/bagels_3.jpg">
     </div>
     <div id="text-left">
         <p>The Salvation Food Pantry hosts lunch only on Fridays, and we donate to them on Thursdays.</p>
