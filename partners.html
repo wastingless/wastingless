@@ -4,10 +4,25 @@ title: Partners
 description: Our friends in fighting food waste.
 ---
 
-{% for partner in site.partners %}
-    <div class="partner-box">
-        <h3>{{ partner.title }}</h3>
-	    <img src="{{ partner.image_path }}" alt="{{ partner.title }}"/>
-	    <p>{{ partner.content }}</p>
-    </div>
-{% endfor %}
+<div class="partner-box">
+    <table>
+    <thead>
+        <tr class ="table-headers">
+            <th></th>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Days</th>
+        </tr>
+    </thead>
+    <tbody> 
+        {% for partner in site.partners %}
+        <tr>
+            <td><img src="{{ partner.image_path }}" alt="{{ partner.title }}"/></td>
+            <td>{{ partner.title }}</td> 
+	        <td>{{ partner.content }}</td>
+            <td>{{ partner.days }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+    </table>
+</div>

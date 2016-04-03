@@ -349,16 +349,31 @@ pre {
 /**
  * Partners
  */
-.partner-box {
-  position: relative; }
-  .partner-box img {
-    position: relative; }
-  .partner-box h3 {
-    left: 40px;
-    position: relative; }
-  .partner-box p {
-    position: absolute;
-    display: inline-block; }
+.partner-box table {
+  margin: auto;
+  border-collapse: collapse;
+  border: 1px solid #eee;
+  border-bottom: 2px solid #00cccc;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1), 0px 10px 20px rgba(0, 0, 0, 0.5), 0px 20px 20px rgba(0, 0, 0, 0.5), 0px 30px 20px rgba(0, 0, 0, 0.5); }
+  .partner-box table tr:hover {
+    background: #F4F4F4; }
+    .partner-box table tr:hover td {
+      color: #555; }
+.partner-box th, .partner-box td {
+  color: #999;
+  border: 1px solid #eee;
+  padding: 12px 35px;
+  border-collapse: collapse;
+  font-size: 24px;
+  text-align: center; }
+  .partner-box th img, .partner-box td img {
+    width: 150px; }
+.partner-box th {
+  background: #00cccc;
+  color: #fff;
+  text-transform: uppercase; }
+  .partner-box th.last {
+    border-right: none; }
 
 /**
  * Involved Page
@@ -375,7 +390,7 @@ pre {
  * Route Map
  */
 .route-content {
-  height: 600px; }
+  height: 520px; }
   .route-content #map {
     position: relative;
     top: 0;
