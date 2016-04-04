@@ -268,7 +268,9 @@ pre {
 .title-bar {
   width: 100%;
   display: table;
-  background-color: #262626;
+  background-image: url(/pictures/potato_header.jpg);
+  background-size: cover;
+  background-position: center;
   height: 250px; }
   .title-bar .wrapper {
     display: table-cell;
@@ -276,6 +278,7 @@ pre {
   .title-bar h1 {
     font-size: 42px;
     color: #FFFFFF;
+    text-shadow: 2px 2px #000;
     text-align: center; }
 
 /**
@@ -451,7 +454,9 @@ pre {
 .bagel-head {
   width: 100%;
   height: 300px;
-  background: #262626;
+  background: url("/pictures/corn_header.jpg");
+  background-size: cover;
+  background-position: center;
   display: table; }
   .bagel-head .leadin {
     display: table-cell;
@@ -459,6 +464,7 @@ pre {
     .bagel-head .leadin h1 {
       padding-left: 25%;
       width: 50%;
+      text-shadow: 2px 2px #000;
       font-size: 36px;
       color: #FFFFFF;
       text-align: center; }
